@@ -39,10 +39,20 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'scrooloose/nerdtree'
 nmap <C-i> :NERDTreeToggle<CR>
+"map <C-n> :NERDTreeToggle<CR>
 " Keep NERDTree window fixed between multiple toggles
 "set winfixwidth
 let NERDTreeIgnore = ['\.pyc$']
+" open a NERDTree automatically when vim starts up if no files were specified:
+autocmd vimenter * if !argc() | NERDTree | endif
+" Close vim if the only window left open is a NERDTree:
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 Plugin 'jistr/vim-nerdtree-tabs'
+let g:nerdtree_tabs_open_on_new_tab = 0
+let g:nerdtree_tabs_open_on_gui_startup = 0
+let g:nerdtree_tabs_open_on_console_startup = 0
+
 
 " TODO: what's this?
 "Plugin 'kana/vim-textobj-user'
