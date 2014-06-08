@@ -1,15 +1,33 @@
 #!/usr/bin/env sh
+REPODIR=${REPODIR:-"$PWD"}
 
-INSTALLDIR=${INSTALLDIR:-"$PWD"}
+rmmsg () {
+    echo "Remove: ~/.vim ~/.vimrc ~/.gvimrc"
+}
+
 create_symlinks () {
-    if [ ! -f ~/.vim ]; then
-        echo "Now, we will create ~/.vim and ~/.vimrc files to configure Vim."
-        ln -sfn $INSTALLDIR ~/.vim
+    if [ -f ~/.vim ]; then
+        echo "ERROR: ~/.vim already exists"
+        rmmsg
+        exit
+    else
+        ln -sfn $REPODIR ~/.vim
     fi
 
-    if [ ! -f ~/.vimrc ]; then
-        ln -sfn $INSTALLDIR/vimrc ~/.vimrc
-        ln -sfn $INSTALLDIR/gvimrc ~/.gvimrc
+    if [ -f ~/.vimrc ]; then
+        echo "ERROR: ~/.vimrc already exists"
+        rmmsg
+        exit
+    else
+        ln -sfn $REPODIR/vimrc ~/.vimrc
+    fi
+
+    if [ -f ~/.gvimrc ]; then
+        echo "ERROR: ~/.gvimrc already exists"
+        rmmsg
+        exit
+    else
+        ln -sfn $REPODIR/gvimrc ~/.gvimrc
     fi
   }
 
@@ -18,6 +36,8 @@ if [ "$?" != "0" ]; then
   echo "You need git installed."
   exit 1
 fi
+
+create_symlinks
 
 which vim > /dev/null
 if [ "$?" != "0" ]; then
