@@ -10,7 +10,7 @@ let mapleader = ","
 let maplocalleader = "\\"
 
 " VUNDLE {{{
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
 Plugin 'gmarik/vundle'
