@@ -52,8 +52,8 @@ if [ ! -d "bundle" ]; then
 fi
 
 if [ ! -d "bundle/vundle" ]; then
-    echo "Installing Vundle (https://github.com/gmarik/vundle)."
-    git clone https://github.com/gmarik/vundle.git bundle/vundle
+    echo "Installing Vundle (https://github.com/gmarik/Vundle.vim.git)."
+    git clone https://github.com/gmarik/Vundle.vim.git bundle/Vundle.vim
 fi
 
 vim +PluginInstall +qall 2>/dev/null
