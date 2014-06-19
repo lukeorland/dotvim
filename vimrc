@@ -256,6 +256,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'Elive/vim-colorscheme-elive'
 Plugin 'zeis/vim-kolor'
 Plugin 'morhetz/gruvbox'
+Plugin 'therubymug/vim-pyte'
 
 " During installation the desired colorscheme might not be avalable
 "if filereadable(globpath(&rtp, 'colors/gruvbox.vim'))
