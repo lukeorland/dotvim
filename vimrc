@@ -374,6 +374,7 @@ set backup
 set noswapfile
 " _ }}}
 
+set modeline
 set modelines=3
 set endofline
 set number
