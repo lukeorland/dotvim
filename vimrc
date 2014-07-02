@@ -116,7 +116,7 @@ hi! link ShowMarksHLm LineNr
 " }}}
 
 " _. Coding {{{
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'majutsushi/tagbar'
 nmap <leader>t :TagbarToggle<CR>
@@ -257,18 +257,23 @@ Plugin 'Elive/vim-colorscheme-elive'
 Plugin 'zeis/vim-kolor'
 Plugin 'morhetz/gruvbox'
 Plugin 'therubymug/vim-pyte'
+" }}}
 
+call vundle#end()            " required
+
+
+" Color {{{
 " During installation the desired colorscheme might not be avalable
 "if filereadable(globpath(&rtp, 'colors/gruvbox.vim'))
-if filereadable(globpath(&rtp, 'colors/molokai.vim'))
+"if filereadable(globpath(&rtp, 'colors/molokai.vim'))
+if filereadable(globpath(&rtp, 'colors/kolor.vim'))
   "colorscheme gruvbox
-  colorscheme molokai
+  "colorscheme molokai
+  colorscheme kolor
 else
   colorscheme default
 endif
 " }}}
-
-call vundle#end()            " required
 
 " _. call commands after loading plugins {{{
 call ctrlp_bdelete#init()
