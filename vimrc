@@ -116,7 +116,7 @@ hi! link ShowMarksHLm LineNr
 " }}}
 
 " _. Coding {{{
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'majutsushi/tagbar'
 nmap <leader>t :TagbarToggle<CR>
