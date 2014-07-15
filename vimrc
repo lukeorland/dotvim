@@ -119,7 +119,7 @@ hi! link ShowMarksHLm LineNr
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'majutsushi/tagbar'
-nmap <leader>t :TagbarToggle<CR>
+nmap \t :TagbarToggle<CR>
 
 Plugin 'gregsexton/gitv'
 
