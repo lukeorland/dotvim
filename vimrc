@@ -498,6 +498,9 @@ nnoremap g, g,zz
 " Open a Quickfix window for the last search.
 nnoremap <silent> <leader>? :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
 
+" Open from Quickfix into a new tab if not already open in a tab:
+set switchbuf+=usetab,newtab
+
 " Highlight word {{{
 " TODO: figure out what this is:
 "nnoremap <silent> <leader>hh :execute 'match InterestingWord1 /\<<c-r><c-w>\>/'<cr>
