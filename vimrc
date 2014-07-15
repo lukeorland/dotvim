@@ -123,7 +123,7 @@ nmap \t :TagbarToggle<CR>
 
 Plugin 'gregsexton/gitv'
 
-Plugin 'joonty/vdebug.git'
+Plugin 'joonty/vdebug'
 
 Plugin 'scrooloose/nerdcommenter'
 nmap <leader># :call NERDComment(0, "invert")<cr>
