@@ -88,12 +88,13 @@ call g:Check_defined('g:airline_branch_prefix', '')
 
 Plugin 'bling/vim-airline'
 
-Plugin 'xsunsmile/showmarks.git'
-let g:showmarks_enable = 1
-hi! link ShowMarksHLl LineNr
-hi! link ShowMarksHLu LineNr
-hi! link ShowMarksHLo LineNr
-hi! link ShowMarksHLm LineNr
+"Plugin 'xsunsmile/showmarks.git'
+" I don't like this plugin that much.
+"let g:showmarks_enable = 1
+"hi! link ShowMarksHLl LineNr
+"hi! link ShowMarksHLu LineNr
+"hi! link ShowMarksHLo LineNr
+"hi! link ShowMarksHLm LineNr
 " }}}
 
 " _. Indent {{{
