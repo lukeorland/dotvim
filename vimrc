@@ -408,7 +408,7 @@ set autoindent
 set textwidth=80
 set shiftwidth=4
 set wrap
-set formatoptions=qrn1
+set formatoptions=qrnc1
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
