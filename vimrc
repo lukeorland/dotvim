@@ -408,6 +408,7 @@ set completeopt=longest,menuone,preview
 set autoindent
 set textwidth=80
 set shiftwidth=4
+set tabstop=4
 set wrap
 set formatoptions=qrnc1
 if exists('+colorcolumn')
