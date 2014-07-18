@@ -20,8 +20,13 @@ if filereadable($VIRTUAL_ENV . '/.vimrc')
     source $VIRTUAL_ENV/.vimrc
 endif
 
-" Just in case there are tabs in the Python code :-(
+" White characters
+set autoindent
 set tabstop=4
+set softtabstop=4
+set textwidth=79
+set shiftwidth=4
+set expandtab
 
 let g:ycm_filetype_blacklist = {}
 

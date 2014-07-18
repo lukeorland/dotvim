@@ -405,16 +405,14 @@ set completeopt=longest,menuone,preview
 
 " White characters {{{
 set autoindent
-set tabstop=4
-set softtabstop=4
 set textwidth=80
 set shiftwidth=4
-set expandtab
 set wrap
 set formatoptions=qrn1
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
+" filetype-specific settings are under .vim/ftplugin/
 " }}}
 
 set visualbell
