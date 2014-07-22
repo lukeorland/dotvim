@@ -133,6 +133,8 @@ vmap <leader># :call NERDComment(0, "invert")<cr>
 " TODO: What's splice.vim?
 "Plugin 'sjl/splice.vim'
 
+Plugin 'DeleteTrailingWhitespace'
+
 Plugin 'SirVer/ultisnips'
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<c-j>"
@@ -467,6 +469,7 @@ set listchars=tab:↦\ ,trail:◦,precedes:˂,extends:˃
 " see
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces#Display_or_remove_unwanted_whitespace_with_a_script.
 "autocmd BufWritePre * :%s/\s\+$//e
+" Using DeleteTrailingWhitespace plugin instead of the above.
 
 " }}}
 
