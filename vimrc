@@ -190,10 +190,14 @@ autocmd FileType gitcommit setlocal foldmethod=manual
 " }}}
 
 " _. Python {{{
+" Plugins configured in .vim/ftplugin/python.vim
 "Plugin 'klen/python-mode'  " syntax, rope, auto-trim whitespace, etc., annoying
+
 Plugin 'python.vim'
+
 Plugin 'python_match.vim'
-Plugin 'pythoncomplete'
+
+"Plugin 'pythoncomplete'  " Superceded by YouCompleteMe
 " }}}
 
 " _. Ruby {{{

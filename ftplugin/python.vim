@@ -32,4 +32,7 @@ let g:ycm_filetype_blacklist = {}
 
 let g:syntastic_python_checkers = ['pylint', 'flake8']
 
-let g:pymode_lint_write = 0
+"let g:pymode_lint_write = 0
+
+" python.vim plugin
+let python_highlight_all = 1
