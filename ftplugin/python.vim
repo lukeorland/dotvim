@@ -20,19 +20,11 @@ if filereadable($VIRTUAL_ENV . '/.vimrc')
     source $VIRTUAL_ENV/.vimrc
 endif
 
-" White characters
-set autoindent
-set tabstop=4
-set softtabstop=4
-set textwidth=79
-set shiftwidth=4
-set expandtab
+" Indentation is handled by the hynek/vim-python-pep8-indent plugin.
 
 let g:ycm_filetype_blacklist = {}
 
 let g:syntastic_python_checkers = ['pylint', 'flake8']
-
-"let g:pymode_lint_write = 0
 
 " python.vim plugin
 let python_highlight_all = 1

@@ -196,8 +196,8 @@ autocmd FileType gitcommit setlocal foldmethod=manual
 "Plugin 'klen/python-mode'  " syntax, rope, auto-trim whitespace, etc., annoying
 
 Plugin 'python.vim'
-
 Plugin 'python_match.vim'
+Plugin 'vim-python-pep8-indent'
 
 "Plugin 'pythoncomplete'  " Superceded by YouCompleteMe
 " }}}
