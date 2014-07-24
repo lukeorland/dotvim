@@ -198,7 +198,7 @@ autocmd FileType gitcommit setlocal foldmethod=manual
 
 Plugin 'python.vim'
 Plugin 'python_match.vim'
-Plugin 'vim-python-pep8-indent'
+Plugin 'hynek/vim-python-pep8-indent'
 
 "Plugin 'pythoncomplete'  " Superceded by YouCompleteMe
 " }}}
