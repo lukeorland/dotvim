@@ -36,6 +36,7 @@ Plugin 'tpope/vim-surround'
 "Plugin 'tpope/vim-unimpaired'
 "Plugin 'maxbrunsfeld/vim-yankstack'
 "Plugin 'tpope/vim-eunuch'
+Plugin 'sjl/gundo.vim'
 
 Plugin 'scrooloose/nerdtree'
 nmap <C-i> :NERDTreeToggle<CR>
