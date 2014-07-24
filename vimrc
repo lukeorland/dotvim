@@ -417,7 +417,7 @@ set textwidth=80
 set shiftwidth=4
 set tabstop=4
 set wrap
-set formatoptions=qrnc1
+set formatoptions=qnc1
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
