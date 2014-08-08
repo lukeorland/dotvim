@@ -197,7 +197,7 @@ autocmd FileType gitcommit setlocal foldmethod=manual
 " Plugins configured in .vim/ftplugin/python.vim
 "Plugin 'klen/python-mode'  " syntax, rope, auto-trim whitespace, etc., annoying
 
-Plugin 'python.vim'
+"Plugin 'python.vim'  " Not useful
 Plugin 'python_match.vim'
 Plugin 'hynek/vim-python-pep8-indent'
 
