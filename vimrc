@@ -414,9 +414,11 @@ set completeopt=longest,menuone,preview
 
 " White characters {{{
 set autoindent
+set tabstop=4
+set softtabstop=4
 set textwidth=80
 set shiftwidth=4
-set tabstop=4
+set expandtab
 set wrap
 set formatoptions=qnc1
 if exists('+colorcolumn')
