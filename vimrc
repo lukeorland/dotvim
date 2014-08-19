@@ -278,6 +278,7 @@ call vundle#end()            " required
 if filereadable(globpath(&rtp, 'colors/kolor.vim'))
   "colorscheme gruvbox
   "colorscheme molokai
+  set t_Co=256
   colorscheme kolor
 else
   colorscheme default
