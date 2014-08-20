@@ -79,7 +79,8 @@ Plugin 'vim-scripts/scratch.vim'
 Plugin 'troydm/easybuffer.vim'
 nmap <leader>be :EasyBufferToggle<enter>
 
-Plugin 'terryma/vim-multiple-cursors'
+" TODO: what does this do?
+"Plugin 'terryma/vim-multiple-cursors'
 " }}}
 
 " _. Fancy {{{
