@@ -81,6 +81,9 @@ nmap <leader>be :EasyBufferToggle<enter>
 
 " TODO: what does this do?
 "Plugin 'terryma/vim-multiple-cursors'
+
+Plugin 'vim-scripts/increment.vim--Natter'
+
 " }}}
 
 " _. Fancy {{{
