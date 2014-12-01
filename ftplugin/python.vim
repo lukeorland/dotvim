@@ -1,5 +1,6 @@
 " Ignore these files when completing
 set wildignore+=*.pyc,eggs/**,*.egg-info/**
+set textwidth=79
 
 " Add the virtualenv's site-packages to vim path
 if has('python')

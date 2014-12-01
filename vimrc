@@ -432,7 +432,7 @@ set expandtab
 set wrap
 set formatoptions=qnc1
 if exists('+colorcolumn')
-  set colorcolumn=80
+  set colorcolumn=+1
 endif
 " filetype-specific settings are under .vim/ftplugin/
 " }}}
