@@ -256,11 +256,8 @@ set showmatch
 set nogdefault
 set hlsearch
 
-" Spacebar unhighlights search results.
-"noremap <leader><space> :noh<cr>:call clearmatches()<cr>
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"
-"Clear current search highlight by double tapping //
-nmap <silent> // :nohlsearch<CR>
+" ,/ clears current search highlight 
+nmap <silent> <header>/ :nohlsearch<CR>
 
 " Keep search matches in the middle of the window.
 nnoremap n nzzzv
