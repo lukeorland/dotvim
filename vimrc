@@ -16,7 +16,6 @@ Plugin 'tsaleh/vim-align'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'tpope/vim-eunuch'
 Plugin 'sjl/gundo.vim'
 
