@@ -120,9 +120,6 @@ call ctrlp_bdelete#init()
 filetype plugin indent on
 syntax on
 
-autocmd FileType gitcommit set tw=68 spell
-autocmd FileType gitcommit setlocal foldmethod=manual
-
 set scrolloff=0
 
 "set switchbuf=useopen
