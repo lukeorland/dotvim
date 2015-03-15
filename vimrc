@@ -22,15 +22,20 @@ Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdtree'
 let NERDTreeIgnore = ['\.pyc$']
 " open a NERDTree automatically when vim starts up if no files were specified:
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 " Close vim if the only window left open is a NERDTree:
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 Plugin 'jistr/vim-nerdtree-tabs'
 let g:nerdtree_tabs_open_on_new_tab = 0
-let g:nerdtree_tabs_open_on_gui_startup = 0
 let g:nerdtree_tabs_open_on_console_startup = 0
-nmap <C-n> :NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_open_on_gui_startup = 0
+" Focus in the main content window
+let g:nerdtree_tabs_focus_on_files = 1
+" Don't unfocus NERDTree when leaving a tab for descriptive tab names
+let g:nerdtree_tabs_meaningful_tab_names = 0
+"nmap <C-n> :NERDTreeTabsToggle<CR>
+map <C-n> <plug>NERDTreeTabsToggle<CR>
 
 Plugin 'Spaceghost/vim-matchit'
 Plugin 'kien/ctrlp.vim'
