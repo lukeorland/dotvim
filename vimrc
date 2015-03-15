@@ -53,9 +53,7 @@ Plugin 'gregsexton/gitv'
 
 Plugin 'joonty/vdebug'
 
-Plugin 'scrooloose/nerdcommenter'
-nmap <leader># :call NERDComment(0, "invert")<cr>
-vmap <leader># :call NERDComment(0, "invert")<cr>
+Plugin 'tomtom/tcomment_vim'
 
 Plugin 'DeleteTrailingWhitespace'
 
