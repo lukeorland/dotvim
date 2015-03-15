@@ -92,6 +92,7 @@ Plugin 'tpope/vim-markdown'
 
 Plugin 'tpope/vim-sleuth'
 
+" Color
 Plugin 'sjl/badwolf'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
@@ -102,7 +103,6 @@ Plugin 'Elive/vim-colorscheme-elive'
 Plugin 'zeis/vim-kolor'
 Plugin 'morhetz/gruvbox'
 Plugin 'therubymug/vim-pyte'
-" }}}
 
 call vundle#end()            " required
 
