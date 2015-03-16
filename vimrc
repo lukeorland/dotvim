@@ -14,6 +14,8 @@ Plugin 'gmarik/Vundle.vim'
 
 """"""""""""
 " Appearance
+Plugin 'gregsexton/Gravity'
+Plugin 'gregsexton/Muon'
 Plugin 'sjl/badwolf'
 Plugin 'skwp/vim-colors-solarized'
 Plugin 'tomasr/molokai'
@@ -214,10 +216,9 @@ syntax on
 
 " Color
 " During installation the desired colorscheme might not be available
-"if filereadable(globpath(&rtp, 'colors/kolor.vim'))
-if filereadable(globpath(&rtp, 'colors/pyte.vim'))
+if filereadable(globpath(&rtp, 'colors/gravity.vim'))
   set t_Co=256
-  colorscheme pyte
+  colorscheme gravity
 else
   colorscheme default
 endif
