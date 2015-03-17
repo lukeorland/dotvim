@@ -189,8 +189,8 @@ Plugin 'kristijanhusak/vim-multiple-cursors'
 
 """"""""""""
 " tmux
-"Plugin 'christoomey/vim-tmux-navigator'
-"Plugin 'jby/tmux.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'jby/tmux.vim'
 
 """"""""""""
 " Coding
